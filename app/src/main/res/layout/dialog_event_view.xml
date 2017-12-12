@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background_white"
+              android:orientation="vertical"
+              android:padding="@dimen/margin_5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/eventTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_5"
+                android:ems="14"
+                android:hint="Title"
+                android:inputType="text"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="50"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/Black"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/eventDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_5"
+                android:ems="14"
+                android:hint="Description"
+                android:inputType="text"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="50"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/Black"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/eventLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_5"
+                android:ems="14"
+                android:hint="Location"
+                android:inputType="text"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="50"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/Black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/eventStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01-01-2017"/>
+
+                <View
+                    android:layout_width="@dimen/margin_5"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:background="@color/Black"
+                    android:padding="@dimen/margin_5"/>
+
+                <Button
+                    android:id="@+id/eventEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01-01-2017"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/Chocolate"
+                android:padding="@dimen/margin_5"/>
+            <!--status has 3 values-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <RadioGroup
+                    android:id="@+id/eventStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/statusTentative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tentative"/>
+
+                    <RadioButton
+                        android:id="@+id/statusConfirmed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmed"/>
+
+                    <RadioButton
+                        android:id="@+id/statusCanceled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Canceled"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/Chocolate"
+                android:padding="@dimen/margin_5"/>
+            <!--alarm has 2 values-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <RadioGroup
+                    android:id="@+id/eventAlarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/eventAlarm0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"/>
+
+                    <RadioButton
+                        android:id="@+id/eventAlarm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/Chocolate"
+                android:padding="@dimen/margin_5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <RadioGroup
+                    android:id="@+id/eventReminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/eventReminder0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"/>
+
+                    <RadioButton
+                        android:id="@+id/eventReminder1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                    <Spinner
+                        android:id="@+id/eventReminderMethods"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/reminder_methods_array"
+                        android:padding="@dimen/margin_5"
+                        android:visibility="gone"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/createEventButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Create"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

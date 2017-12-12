@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "900139818164",
+    "firebase_url": "https://admonition-9abd0.firebaseio.com",
+    "project_id": "admonition-9abd0",
+    "storage_bucket": "admonition-9abd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900139818164:android:2af43b6aca0a7cb3",
+        "android_client_info": {
+          "package_name": "com.app4mobi.admonition"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900139818164-euu8aevjahd62hh6pbsvqe41kb9svpdp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app4mobi.admonition",
+            "certificate_hash": "21da65e1d4bc8519cfc10dd2d804241128f5ed2c"
+          }
+        },
+        {
+          "client_id": "900139818164-jn00is006o48tj9o3atula4sq85ioek6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxw3bScjM9hHMu0CxGIsVeM22f6C3-aug"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900139818164-jn00is006o48tj9o3atula4sq85ioek6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

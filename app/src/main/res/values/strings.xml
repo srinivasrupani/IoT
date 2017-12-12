@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Admonition</string>
+    <string name="hint_user_name_mobile">user name / mobile</string>
+    <string name="hint_password">password</string>
+    <string name="label_submit">SUBMIT</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="uri_event">content://com.android.calendar/events</string>
+    <string name="uri_reminders">content://com.android.calendar/reminders</string>
+    <string name="uri_attendees">content://com.android.calendar/attendees</string>
+
+    <string-array name="status_array">
+        <item>Tentative</item>
+        <item>Confirmed</item>
+        <item>Canceled</item>
+    </string-array>
+
+    <string-array name="reminder_methods_array">
+        <item>Default</item>
+        <item>Alert</item>
+        <item>Email</item>
+        <item>SMS</item>
+    </string-array>
+
+</resources>

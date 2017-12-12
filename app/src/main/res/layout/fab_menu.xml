@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="@dimen/fab_margin"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/reminderEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:drawablePadding="@dimen/margin_10"
+        android:drawableRight="@drawable/ic_event_note_black"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_10"
+        android:text="Event"
+        android:textColor="@color/ForestGreen"
+        android:drawableEnd="@drawable/ic_event_note_black"/>
+
+    <TextView
+        android:id="@+id/meetingEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:drawablePadding="@dimen/margin_10"
+        android:drawableRight="@drawable/ic_add_alert_black"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_10"
+        android:text="Meeting"
+        android:textColor="@color/ForestGreen"
+        android:drawableEnd="@drawable/ic_add_alert_black"/>
+
+    <TextView
+        android:id="@+id/callingEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:drawablePadding="@dimen/margin_10"
+        android:padding="@dimen/margin_10"
+        android:drawableRight="@drawable/ic_add_alert_black"
+        android:gravity="center_vertical"
+        android:text="Call"
+        android:textColor="@color/ForestGreen"
+        android:drawableEnd="@drawable/ic_add_alert_black"/>
+
+    <TextView
+        android:id="@+id/attendeeEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:drawablePadding="@dimen/margin_10"
+        android:drawableRight="@drawable/ic_add_alert_black"
+        android:gravity="center_vertical"
+        android:text="Attendee"
+        android:padding="@dimen/margin_10"
+        android:textColor="@color/ForestGreen"
+        android:drawableEnd="@drawable/ic_add_alert_black"/>
+
+    <ImageView
+        android:id="@+id/closeEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:drawablePadding="@dimen/margin_5"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_10"
+        android:layout_marginBottom="56dp"
+        android:src="@drawable/ic_close_black"/>
+</LinearLayout>

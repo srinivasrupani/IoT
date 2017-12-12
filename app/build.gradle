@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.app4mobi.admonition"
+        minSdkVersion 18
+        //targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    // Specifies the flavor dimensions you want to use. The order in which you
+    // list each dimension determines its priority, from highest to lowest,
+    // when Gradle merges variant sources and configurations. You must assign
+    // each product flavor you configure to one of the flavor dimensions.
+    /* flavorDimensions "api", "mode"
+
+     productFlavors {
+         demo {
+             // Assigns this product flavor to the "mode" flavor dimension.
+             dimension "mode"
+         }
+
+         full {
+             dimension "mode"
+         }
+
+         // Configurations in the "api" product flavors override those in "mode"
+         // flavors and the defaultConfig block. Gradle determines the priority
+         // between flavor dimensions based on the order in which they appear next
+         // to the flavorDimensions property above--the first dimension has a higher
+         // priority than the second, and so on.
+         minApi24 {
+             dimension "api"
+             minSdkVersion 24
+             // To ensure the target device receives the version of the app with
+             // the highest compatible API level, assign version codes in increasing
+             // value with API level. To learn more about assigning version codes to
+             // support app updates and uploading to Google Play, read Multiple APK Support
+             versionCode 30000 + android.defaultConfig.versionCode
+             versionNameSuffix "-minApi24"
+         }
+
+         minApi23 {
+             dimension "api"
+             minSdkVersion 23
+             versionCode 20000 + android.defaultConfig.versionCode
+             versionNameSuffix "-minApi23"
+         }
+
+         minApi21 {
+             dimension "api"
+             minSdkVersion 21
+             versionCode 10000 + android.defaultConfig.versionCode
+             versionNameSuffix "-minApi21"
+         }
+     }*/
+}
+/*Related to MQTT / Hive MQ*/
+/*repositories {
+    maven {
+        url "https://repo.eclipse.org/content/repositories/paho-releases/"
+    }
+}*/
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:design:27.0.2'
+    //For push notifications
+    compile 'com.google.firebase:firebase-messaging:11.6.2'
+    //For real time database
+    //compile 'com.google.firebase:firebase-database:11.6.2'
+    //compile 'com.google.firebase:firebase-storage:11.6.2'
+    //For Authentication
+    //compile 'com.google.firebase:firebase-auth:11.6.2'
+
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    //For Card View
+    compile 'com.android.support:cardview-v7:27.0.2'
+    //Couch base
+    compile 'com.couchbase.lite:couchbase-lite-android:1.4.0'
+    //MQTT
+    /*compile('org.eclipse.paho:org.eclipse.paho.android.service:1.0.2') {
+        exclude module: 'support-v4'
+    }*/
+//    compile files('libs/org.eclipse.paho.android.service-1.1.1.jar')
+//    compile files('libs/org.eclipse.paho.client.mqttv3-1.1.1.jar')
+}
+
+apply plugin: 'com.google.gms.google-services'
